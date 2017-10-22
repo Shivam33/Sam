@@ -17,7 +17,7 @@ int main()
 {
 for( i=0; i < N; i++)
 {
-procClockTimes[i] = (char *) malloc(256);
+procClockTimes[i] = (char *) malloc(1024);
 }
 fd = open("/dev/mytime", O_RDONLY);
 if (fd < 0){
